@@ -1,0 +1,87 @@
+{%load static %}
+<!DOCTYPE html>
+<html  dir="rtl" lang="ar" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width , initial-scale=1.0" >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link href="{%static 'css/css_style.css'%}" rel="stylesheet">
+
+        <title>نادي الشعب</title>
+    </head>
+    <body>
+        <header>
+                <nav>
+                    <a href="#main-section" class="active">الرئيسية</a>
+                    <a href="#corva-gold"> كورفاقولد </a>
+                    <a href="#contact-us">تواصل معنا</a>
+                </nav> 
+                <img src="{%static 'images/logo.png'%}" alt="logo" height='50px' width="50px">
+
+        </header>
+        <main>
+            <section id="main-section" class="main-section">
+                <img src="{%static 'images/itti.jpeg'%}" height='150px' width="150px">
+                <p>
+                <span>نادي الاتحاد </span>هو واحد من أقدم وأشهر الأندية في كرة القدم السعودية. تأسس النادي في عام 1927، ويعتبر رمزًا للتميز والنجاح في عالم الكرة. يتمتع الاتحاد بتاريخ حافل بالإنجازات، حيث حقق العديد من البطولات المحلية والدولية، بما في ذلك دوري المحترفين السعودي وكأس الملك
+                يُعرف النادي بلقب "العميد" نظراً لكونه أول نادٍ سعودي مُنح هذا اللقب، ويعتبر من الأندية الأكثر شعبية في المملكة. يضم الفريق مجموعة من أفضل اللاعبين الذين ساهموا في رفع اسم النادي في المحافل الرياضية.
+                </p>
+        
+            </section>
+            
+            <section id="corva-gold" class="corva-gold">
+                <p>
+                    <span>كورفاقولد،</span> نعيش عشق نادي <span>الاتحاد </span> في كل تيفو، حيث تتجسد الألوان والروح في مدرجاتنا. نحن هنا لنرفع راية الاتحاد عالياً، ونجعل من كل مباراة احتفالية تملؤها الحماسة والتشجيع. معاً، نحن صوت واحد، نكتب تاريخاً جديداً من الإبداع والانتماء!
+                </p>
+                <div >
+                    <img src="{% static 'images/tifo_1.jpg' %}" alt="tifo 1" class="active">
+                    <img src="{% static 'images/tifo_2.jpg' %}" alt="tifo 2">
+                    <img src="{% static 'images/tifo_3.jpg' %}" alt="tifo 3">
+                    <img src="{% static 'images/tifo_4.webp' %}" alt="tifo 4">
+                </div>
+
+            </section>
+        
+        
+            <section id="contact-us" class="contact-us">
+                <h2>للاستفسار عن الاضمام الى الكورفاقولد</h2>
+                <form action="#" method="post">
+                    <label for="fname">الاسم:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">اللقب:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">البريد الالكتروني:</label>
+                    <input type="email" id="email" name="email" autocomplete="off"><br><br>
+                    <label for="message">الرسالة</label>
+                    <textarea id="message" name="message" rows="4" cols="50">
+                    </textarea><br><br>
+                    <input class="sumbit" type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div class="social-media">
+                <h3>القنوات الرسمية لنادي الاتحاد السعودي</h3>
+                <a href="https://www.instagram.com/ittihadclub.sa/?hl=en" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="https://x.com/ittihad_en?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCivJETAP4VD7rXRgjdpVwNw" target="_blank"><i class="bi bi-youtube"></i></a>
+      
+            </div>
+
+  </footer>
+       
+        <script>
+            const images = document.querySelectorAll('.corva-gold img');
+            let currentIndex = 0;
+    
+            function showNextImage() {
+                images[currentIndex].classList.remove('active'); 
+                currentIndex = (currentIndex + 1) % images.length; 
+                images[currentIndex].classList.add('active'); 
+            }
+
+            setInterval(showNextImage, 5000);
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,180 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+
+}
+
+header{
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0,0, 0.4);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a{
+    
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    
+    color: grey;
+    text-decoration: none;
+}
+nav a.active{
+    font-weight: bold;
+    color: gold;
+    text-decoration: none;
+}
+
+main{
+    padding: 2rem 10rem;
+
+}
+.main-section{
+    min-height: 70vh;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    gap: 2rem;
+    align-items: center;
+
+}
+.main-section p ,.corva-gold p{
+    color: white;
+    width: 50%;
+    line-height: 3rem;
+    font-size: 1rem;
+
+}
+p span{
+    font-size: 2rem;
+    color: gold;
+    font-weight: bold;
+
+}
+.main-section img{
+    border: 5px solid white;
+    border-radius: 15%;
+    transform: rotate(15deg);
+    height: 40%;
+    width: 40%;
+}
+
+
+.corva-gold {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    min-height: 100vh;
+
+}
+
+.corva-gold img {
+    margin-left: 3rem;
+    border: 5px solid white;
+    border-radius: 10%;
+    transform: rotate(345deg);
+    display: none; 
+    height: 25rem; 
+    width: 30rem; 
+}
+.corva-gold img.active {
+    display: block; 
+}
+.contact-us {
+    height: 90vh;
+    padding: 6rem 2rem 2rem 2rem; 
+    max-width: 40rem; 
+    margin: 2rem auto; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-us label {
+    display: block; 
+    color: white;
+    margin-bottom: 5px; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #333; 
+    color: white; 
+}
+
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: goldenrod; 
+    width: 50%;
+    color: white; 
+    border: none;
+    border-radius: 5px;  
+    padding: 10px 15px; 
+    transition: background-color 0.3s; 
+
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(192, 139, 5); 
+}
+.contact-us h2{
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color:gold;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.social-media h3{
+    margin-bottom: 1rem;
+}
+.social-media a{
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.social-media a:hover{
+    background-color: goldenrod;
+}
