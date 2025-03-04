@@ -9,6 +9,10 @@ urlpatterns=[
     path("careers/cv/",views.cv_view,name='cv'),
     path("article/ai/",views.ai_view,name='AI'),
     
-    path("",views.home_view,name='home')
+    path("",views.home_view,name='home_view'),
+    path("themes/",views.thems_view,name='themes_view'), 
+    path("font/large/",views.large_font_view,name='large_font_view'),
+    path("font/normal/",views.normal_font_view,name='normal_font_view'),
+
 
 ]
